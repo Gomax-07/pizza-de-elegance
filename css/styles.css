@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    font-family: Tahoma;
+    background: linear-gradient(45deg, rgb(173, 145, 54), rgb(146, 55, 55));
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    position: absolute;
+    top: o;
+    left: 0;
+    padding: o 7rem;
+    background: rgba(12, 6, 6, 0.4);
+    width: 100%;
+    border: 1px dotted black;
+}
+
+header .logo {
+    color: rgb(223, 119, 105);
+    height: 1rem;
+    line-height: 3 rem;
+    font-size: 1.5rem;
+    font-family: 'Viaoda Libre', cursive;
+    font-weight: bolder;
+    float: left;
+    margin-top: 0.5rem;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li a {
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 1.4rem;
+    color: crimson;
+    text-decoration: none;
+    display: block;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0.25rem;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: crimson;
+    background-color: rgb(209, 164, 81);
+}
+
+.navbar-toggle {
+    color: aliceblue;
+    float: right;
+    line-height: 3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.main p {
+    padding-top: 6cm;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 1cm;
+    line-height: 1.4cm;
+    padding-right: 15cm;
+}
+
+.main img {
+    margin-top: 1.5cm;
+    width: 40%;
+    height: 90%;
+    padding-top: 1.1cm;
+    float: right;
+    padding-right: 1.2cm;
+}
+
+.about {
+    background: linear-gradient(to right, antiquewhite, rgb(173, 145, 54));
+}
+
+.about h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Viaoda Libre', cursive;
+    text-transform: uppercase;
+    font-size: 1.5cm;
+}
+
+.about p {
+    padding-top: 3cm;
+    padding-right: 2cm;
+    font-size: 0.65cm;
+    float: right;
+    line-height: 1.2cm;
+}
+
+.about img {
+    height: 15%;
+    width: 30%;
+    padding-top: 1cm;
+}
+
+.form {
+    margin-top: 1.3cm;
+    width: 350px;
+    height: 410px;
+    background: linear-gradient(to top, rgb(0, 0, 0, 0.8)50%, rgb(0, 0, 0, 0.8)50%);
+    position: absolute;
+    left: 100px;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.form input {
+    line-height: 0.7cm;
+    margin-top: 0.4cm;
+}
+
+#Submit {
+    border-radius: 25px;
+    padding: 15px;
+    background-color: rgba(221, 207, 79, 0.9);
+    color: aliceblue;
+}
+
+#ft {
+    margin-top: 15cm;
+    background: linear-gradient(to left, rgb(173, 145, 54), rgb(146, 55, 55));
+    background-size: cover;
+    height: 5cm;
+}
+
+.logo {
+    float: right;
+    right: 10cm;
+    margin-top: 1cm;
+}
+
+.logo a {
+    margin-right: 7cm;
+}
