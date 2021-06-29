@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body id="order">
+
+    <main>
+
+        <h2 class="section-heading">Build your Own</h2>
+
+
+        <section>
+            <div id="pizza" class="card">
+                <div class="card-image">
+                    <form action="" id="buildpizza" onsubmit="getOrder(); display(); return false;">
+                        <label style="margin-top: 30px" class="labels2" for="crust">Build your pizza from the options below.</label><br><br>
+
+                        <label class="labels">Choose Crust</label><br>
+                        <select id="crust">
+                    <option value="Regular">Regular Crust</option>
+                    <option value="Gluten-Free">Gluten Free Crust</option>
+                    <option value="Stuffed">Stuffed Crust</option>
+                    <option value="Thin-Crispy">Thin Crispy Crust</option>
+
+                </select><br>
+
+                        <label class="labels">Choose Flavor</label><br>
+                        <select id="flavour">
+                    <option value="Mushroom-Pepperoni">Mushroom Pepperoni</option>
+                    <option value="Baby-Spinach">Baby Spinach</option>
+                    <option value="Hawaiian-Style">Hawaiian Style</option>
+                    <option value="Chicken-Mushroom">Chicken Mushroom</option>
+
+                </select><br>
+                        <label class="labels">Select Size</label><br>
+                        <select id="size">
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                </select><br>
+
+                        <label class="labels">Choose extra toppings at 250/=</label><br>
+                        <select id="extras">
+                    <option value="None">None</option>
+                    <option value="Bacon">Bacon</option>
+                    <option value="Cheese">Cheese</option>
+                    <option value="Pepperoni">Pepperoni</option>
+                </select><br>
+
+
+                        <br>
+                        <button class="submt" type="submit" onclick="window.scrollTo(0,document.body.scrollHeight);">Proceed</button>
+
+                    </form>
+
+
+                </div>
+
+            </div>
+
+            <div id="checkoutcard" class="card" style="visibility: hidden">
+                <div class="card-image" style="overflow: hidden">
+                    <table class="table" id="result" style="font-size: 16px; text-align: left">
+                        <h2 style="margin: 30px; visibility: visible">Your Order</h2>
+                        <thead>
+                            <th scope="col" style="border: none"></th>
+
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" style="border: none">Crust</th>
+                                <td id="crustrow" style="border: none"></td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row" style="border: none">Flavour</th>
+                                <td id="flavourrow" style="border: none"></td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row" style="border: none">Size (Crust)</th>
+                                <td id="sizerow" style="border: none"></td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row" style="border: none">Toppings</th>
+                                <td id="toppingsrow" style="border: none"></td>
+
+                            </tr>
+
+
+                            <tr>
+                                <th id="delrow" scope="row" style="border: none; visibility: hidden">Delivery</th>
+                                <td id="deliveryrow" style="border: none"></td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row" style="color: black" style="border: none">Total Amount</th>
+                                <td id="totalrow" style="border: none; font-size: 25px; color: black"></td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <input type="button" value="Confirm Order" id="orderconfirm" onclick="display2(); alertbox() " onclick="window.scrollTo(0,document.body.scrollHeight);">
+                    <a href="index.html">
+                        <input type="button" value="New Order" id="order2" style="visibility: hidden">
+                    </a>
+
+                    <p id="qn" style="visibility: hidden">Enter your phone number below and zone of pickup within Nairobi to confirm your order</p>
+                    <form onsubmit=" getNumber(); return false">
+                        <input id="phonenumber" type="number" required placeholder="Phone no" style="visibility: hidden"><input id="zone" type="text" required placeholder="Pickup zone" style="visibility: hidden"><br>
+                        <br>
+                        <button type="Submit" id="confirmphone" style="visibility: hidden">Place Order</button>
+                    </form>
+
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
