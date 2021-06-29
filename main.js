@@ -143,5 +143,5 @@ function getNumber() {
     document.getElementById("confirmphone").style.visibility = "hidden";
     document.getElementById("orderconfirm").style.visibility = "hidden";
     document.getElementById("zone").style.visibility = "hidden";
-    document.getElementById("order2").style.visibility = "visible"
+    document.getElementById("order2").style.visibility = "visible";
 }
