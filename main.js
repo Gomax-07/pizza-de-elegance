@@ -145,3 +145,4 @@ function getNumber() {
     document.getElementById("zone").style.visibility = "hidden";
     document.getElementById("order2").style.visibility = "visible";
 }
+ 
